@@ -1,7 +1,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
   <bean id="restaurantBean" class="com.prolifics.practice.Restaurant" > 
+   <property name="restaruantWaitersList">
+ <list>
+  <value>Mr. ABC</value> 
+  <value>Mr. BCD</value> 
+  <value>Mr. DEF</value> 
+  <value>Mr. DEF</value> 
+  </list>
+  </property>
   
-   <constructor-arg ref="teaBean" /> 
+  <!-- <constructor-arg ref="teaBean" />  --> 
   </bean>
   <bean id="teaBean" class="com.prolifics.practice.Tea" /> 
   </beans>

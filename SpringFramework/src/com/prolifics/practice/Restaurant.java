@@ -1,5 +1,7 @@
 package com.prolifics.practice;
 
+import java.util.List;
+
 public class Restaurant {
 	/*
 	String welcomNote ;
@@ -14,7 +16,7 @@ public class Restaurant {
 	}*/
 	
 	
-	IHotDrink hotDrink;
+	/*IHotDrink hotDrink;
 	
 	public Restaurant(IHotDrink hotDrink) {
 
@@ -24,5 +26,17 @@ public class Restaurant {
 	public void greetCustomer() {
 
 		hotDrink.prepareHotDrink();
+	}*/
+	
+	
+	private List restaruantWaitersList;
+	public void setRestaruantWaitersList(List restaruantWaitersList) {
+		this.restaruantWaitersList = restaruantWaitersList;
 	}
+
+	public void greetCustomer() {
+
+		System.out.println("All waiters working in Restaruant  :  " + restaruantWaitersList);
+	}
+
 }
